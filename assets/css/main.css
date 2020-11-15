@@ -1,3 +1,4 @@
+/* BASE */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -14,4 +15,33 @@ h1, h2, h3, h4 {
 
 p {
     font-family: var(--dosis-font);
+}
+
+/* HERO STYLING */
+.hero {
+    height: 100vh;
+    background-color: #13243c;
+    overflow: hidden; /* Avoid hero img height from being larger than 100vh */
+    /* background-color: tomato; */
+}
+
+.hero img {
+    width: 100%;
+    height: calc(360px + 80vw);
+    object-fit: cover;
+    object-position: left;
+    object-position: -260px -10vw;
+}
+
+@media (min-width: 648px) {
+    .hero img {
+        object-position: unset;
+        height: calc(150px + 80vw);
+    }
+}
+
+@media (min-width: 1350px) {
+    .hero img {
+        height: 100vh;
+    }
 }
