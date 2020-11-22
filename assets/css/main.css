@@ -30,7 +30,6 @@ p {
 }
 
 /* MENU */
-
 .burger {
     width: 60px;
     height: 13px;
@@ -45,6 +44,21 @@ p {
     height: 1px;
     background-color: white;
     margin-bottom: 5px;
+    transition: 0.4s;
+    opacity: 1;
+    transform-origin: left;
+}
+
+.animate-burger .line-1 {
+    transform: rotate(12deg);
+}
+
+.animate-burger .line-2 {
+    opacity: 0;
+}
+
+.animate-burger .line-3 {
+    transform: rotate(-12deg);
 }
 
 .overlay-mobile {
@@ -57,6 +71,12 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    transition: 500ms;
+    transform: translateX(100%);
+}
+
+.overlay-visible {
+    transform: translateX(0vh);
 }
 
 .menu-links-mobile {
@@ -86,6 +106,16 @@ p {
 .menu-socials-mobile object {
     pointer-events: none;
 }
+
+/* .overlay-desktop {
+    height: 37px;
+    background-color: black;
+
+}
+
+.menu-links-desktop {
+    
+} */
 
 .test {
     height: 1000px;
@@ -268,6 +298,7 @@ p {
 
 /* DESKTOP */
 @media (min-width: 1350px) {
+    
     .hero img {
         height: 100vh;
     }
