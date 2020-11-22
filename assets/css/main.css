@@ -37,20 +37,23 @@ p {
     right: 12px;
     top: 12px;
     z-index: 1000;
+    cursor: pointer;
+    transition: 0.05s;
+    margin-top: -1px;
 }
 
 .line-1, .line-2, .line-3 {
     width: 100%;
     height: 1px;
     background-color: white;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     transition: 0.4s;
     opacity: 1;
     transform-origin: left;
 }
 
 .animate-burger .line-1 {
-    transform: rotate(12deg);
+    transform: rotate(14deg);
 }
 
 .animate-burger .line-2 {
@@ -58,7 +61,7 @@ p {
 }
 
 .animate-burger .line-3 {
-    transform: rotate(-12deg);
+    transform: rotate(-14deg);
 }
 
 .overlay-mobile {
@@ -321,6 +324,80 @@ p {
 
     .hero-bottom div {
         margin-bottom: -8px;
+    }
+
+    .burger:hover > .line-1 {
+        transform: translateY(-3px);
+    }
+    
+    .burger:hover > .line-3 {
+        transform: translateY(3px);
+    }
+
+    .overlay-mobile {
+        height: 37px;
+        /* width: 100%; */
+        background-color: transparent;
+        /* position: fixed; */
+        /* z-index: 100; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        justify-content: center;
+        align-items: flex-end;
+        transition: 0.9s ease;
+        /* transform: translateX(100%); */
+    }
+    
+    .overlay-visible {
+        /* transform: translateX(0vh); */
+    }
+    
+    .menu-links-mobile {
+        /* display: flex; */
+        flex-direction: row;
+        margin-top: 0px;
+        margin-right: 150px;
+        /* padding: 10px 10px; */
+    }
+    
+    .menu-links-mobile a {
+        font-size: 16px;
+        /* font-family: var(--dosis-font); */
+        /* text-transform: uppercase; */
+        /* text-decoration: none; */
+        /* text-align: center; */
+        margin: 0 20px;
+        letter-spacing: 0.2em;
+        /* font-weight: 300; */
+        /* color: white; */
+    }
+    
+    .menu-socials-mobile a {
+        /* margin: 0 10px; */
+        /* text-decoration: none; */
+        /* display: inline-block; */
+        display: none;
+    }
+
+    .lol {
+        /* display: block; */
+        background-color: black;
+        height: 37px;
+        width: 100%;
+        position: fixed;
+        transform: translateY(-100%);
+        /* z-index: 10000; */
+        /* opacity: 0; */
+        transition: 200ms;
+        transition-delay: 500ms;
+    }
+
+    .lol-visible {
+        /* opacity: 1; */
+        transform: translateY(0vh);
+        transition-delay: 0s;
     }
 }
 
