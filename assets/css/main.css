@@ -326,6 +326,14 @@ p {
         margin-bottom: -8px;
     }
 
+    /* .burger:hover > .line-1 {
+        transform: translateY(-3px) !important;
+    }
+    
+    .burger:hover > .line-3 {
+        transform: translateY(3px) !important;
+    } */
+
     .burger:hover > .line-1 {
         transform: translateY(-3px);
     }
