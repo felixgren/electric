@@ -120,11 +120,6 @@ p {
     
 } */
 
-.test {
-    height: 1000px;
-}
-
-
 /* HERO STYLING */
 .hero {
     height: 100vh;
@@ -355,10 +350,16 @@ p {
         justify-content: center;
         align-items: flex-end;
         transition: 0.9s ease;
+        transition-delay: 0.2s;
+
+        /* box-shadow: 1px 1px 1px red; */
+        
+
         /* transform: translateX(100%); */
     }
     
     .overlay-visible {
+        transition-delay: 0s;
         /* transform: translateX(0vh); */
     }
     
@@ -389,7 +390,7 @@ p {
         display: none;
     }
 
-    .lol {
+    .menu-bar {
         /* display: block; */
         background-color: black;
         height: 37px;
@@ -402,7 +403,7 @@ p {
         transition-delay: 500ms;
     }
 
-    .lol-visible {
+    .menu-baro-visible {
         /* opacity: 1; */
         transform: translateY(0vh);
         transition-delay: 0s;
