@@ -1,63 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Electric</title>
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-        <link rel="shortcut icon" href="" type="image/x-icon">
-    </head>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/color.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Color picker</title>
+  </head>
     <body>
-        <header>
-            <!-- Header content -->
-            <nav>
-                <!-- Navbar -->
-            </nav>
-        </header>
-        <main>
-            <!-- Page content here -->
-            <section class="hero">
-                <div class="hero-content">
-                    <div class="hero-title">
-                        <h2>YOU ARE SPECIAL.</h2>
-                        <div>
-                            <h1><span>
-                                <div class="line-wrapper">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </span>L<span>
-                                <div class="line-wrapper">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </span>CTRIC</h1>
-                            <p>1.0</p>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-bottom">
-                        <p>1.0</p>
-                            <div>
-                                <object class="arrow" data="/assets/images/arrowicon.svg" type=""></object>
-                                <object class="arrow-animated" data="/assets/images/arrowicon.svg" type="image/svg+xml"></object>
-                            </div>
-                        <p>E.L.E.C.T.R.I.C</p>
-                    </div>
-                </div>
-
-                <picture>
-                    <!-- <source srcset="/assets/images/hero.png" media="(min-width: 1000px)"> Media query here -->
-                    <img src="/assets/images/hero.png" alt="Car front shot">
-                </picture>
-            </section>
-        </main>
-        <footer>
-            <!-- Footer content -->
-        </footer>
+      <section class="color">
+        <div class="description">
+          <h1>Customize your Electric</h1>
+          <p>The Electric is available in three different colors: Cloud, Storm, and Eclipse.<br>
+          Pick your favorite.</p>
+          </div>
+          <div class="buttons">
+            <button class="silver" onclick="changeColor('assets/images/sida_ljusmedbakgrund02.jpg')">CLOUD</button>
+            <button class="grey" onclick="changeColor('assets/images/sida_morkmedbakgrund02.jpg')">STORM</button>
+            <button class="red" onclick="changeColor('assets/images/sida_rodmedbakgrund01.jpg')">ECLIPSE</button>
+          </div>
+          
+        <div class="image-shown">
+            <img class="img-displayed" src="assets/images/sida_ljusmedbakgrund02.jpg" />
+        </div>
+       </section>
+        <script src="assets/js/color.js"></script>
     </body>
-    <script src="/assets/js/main.js"></script>
 </html>
