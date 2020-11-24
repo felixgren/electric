@@ -1,12 +1,12 @@
 /* Temporary font support for my windows firefox */
-@font-face {
+/* @font-face {
     font-family: 'Helvetica';
     src: url('/assets/fonts/Helvetica-Light.woff2') format('woff2'),
         url('/assets/fonts/Helvetica-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 /* BASE */
 * {
@@ -32,7 +32,6 @@ p {
 /* MENU */
 .burger {
     width: 60px;
-    /* height: 13px; */
     height: auto;
     position: fixed;
     right: 12px;
@@ -116,7 +115,6 @@ p {
     height: 100vh;
     background-color: #13243c;
     overflow: hidden; /* Avoid hero img height from being larger than 100vh */
-    /* background-color: tomato; */
 }
 
 .hero img {
@@ -312,15 +310,6 @@ p {
         margin-bottom: -8px;
     }
 
-    /* remove this crap */
-    /* .burger:hover > .line-1 {
-        transform: translateY(-3px) !important;
-    }
-    
-    .burger:hover > .line-3 {
-        transform: translateY(3px) !important;
-    } */
-
     .burger:hover > .line-1 {
         transform: translateY(-3px);
     }
@@ -331,19 +320,11 @@ p {
 
     .overlay {
         height: 37px;
-        /* width: 100%; */
         background-color: transparent;
-        /* position: fixed; */
-        /* z-index: 100; */
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* justify-content: space-around; */
-        /* align-items: center; */
         justify-content: center;
         align-items: flex-end;
         transition: 1.2s ease;
         transition-delay: 300ms;        
-        /* transform: translateX(100%); */
     }
     
     .overlay-visible {
@@ -352,47 +333,32 @@ p {
     }
     
     .menu-links {
-        /* display: flex; */
         flex-direction: row;
         margin-top: 0px;
         margin-right: 150px;
-        /* padding: 10px 10px; */
     }
     
     .menu-links a {
         font-size: 16px;
-        /* font-family: var(--dosis-font); */
-        /* text-transform: uppercase; */
-        /* text-decoration: none; */
-        /* text-align: center; */
         margin: 0 20px;
         letter-spacing: 0.2em;
-        /* font-weight: 300; */
-        /* color: white; */
     }
     
     .menu-socials-mobile a {
-        /* margin: 0 10px; */
-        /* text-decoration: none; */
-        /* display: inline-block; */
         display: none;
     }
 
     .menu-bar {
-        /* display: block; */
         background-color: black;
         height: 37px;
         width: 100%;
         position: fixed;
         transform: translateY(-100%);
-        /* z-index: 10000; */
-        /* opacity: 0; */
         transition: 200ms;
         transition-delay: 800ms;
     }
 
     .menu-bar-visible {
-        /* opacity: 1; */
         transform: translateY(0vh);
         transition-delay: 0s;
         box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
