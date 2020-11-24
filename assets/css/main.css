@@ -238,14 +238,14 @@ p {
 /*FORM*/
 
 .form-bg {
-  background-image: url("/assets/images/mobil.png");
+  background-image: url("/assets/images/cartinifiedMobil.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
 
 .form-bg h1 {
@@ -257,18 +257,22 @@ p {
   text-align: center;
   padding: 20px;
 }
+label {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
 
 /*INPUT email*/
 
 .email {
   display: flex;
-  flex-grow: 2;
   justify-content: center;
   padding: 25px;
-}
-.btn {
-  display: flex;
-  justify-content: center;
 }
 
 input[type="email"] {
@@ -276,8 +280,9 @@ input[type="email"] {
   padding: 15px;
   border: none;
   background: transparent;
+  background-color: rgba(15, 15, 15, 0.2);
   border-bottom: solid white 2px;
-  text-align: center;
+  border-top: solid white 2px;
   color: white;
   font-size: 18px;
 }
@@ -288,31 +293,31 @@ input[type="email"] {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #938989;
+  color: #cfcaca;
   opacity: 1; /* Firefox */
   font-family: var(--helvetica-font);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #938989;
+  color: #cfcaca;
   font-family: var(--helvetica-font);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #938989;
+  color: #cfcaca;
   font-family: var(--helvetica-font);
-  font-size: 14px;
+  font-size: 16px;
 }
 /*BUTTON*/
 
 button[type="submit"] {
   font-family: var(--dosis-font);
   font-weight: 300;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   color: white;
   width: 30%;
@@ -322,8 +327,9 @@ button[type="submit"] {
   background: transparent;
   transition: all 0.5s;
   cursor: pointer;
-  background-color: rgba(15, 15, 15, 0.2);
-  border: 2px solid white;
+  background-color: rgba(15, 15, 15, 0.5);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .btn span {
@@ -354,10 +360,12 @@ button[type="submit"] {
 /*MEDIA*/
 @media only screen and (min-width: 768px) {
   .form-bg {
-    background-image: url("/assets/images/newsl.jpg");
+    background-image: url("/assets/images/cartinified.jpg");
+    display: flex;
+    justify-content: flex-end;
   }
   .form-bg h1 {
-    font-size: 56px;
+    font-size: 3em;
   }
 }
 
