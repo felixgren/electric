@@ -29,12 +29,92 @@ p {
     color: white;
 }
 
+/* MENU */
+.burger {
+    width: 60px;
+    height: auto;
+    position: fixed;
+    right: 12px;
+    top: 12px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: 0.05s;
+    margin-top: -1px;
+}
+
+.line-1, .line-2, .line-3 {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 6px;
+    transition: 0.4s;
+    opacity: 1;
+    transform-origin: left;
+}
+
+.animate-burger .line-1 {
+    transform: rotate(14deg);
+}
+
+.animate-burger .line-2 {
+    opacity: 0;
+}
+
+.animate-burger .line-3 {
+    transform: rotate(-14deg);
+}
+
+.overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 500ms;
+    transform: translateX(100%);
+}
+
+.overlay-visible {
+    transform: translateX(0vh);
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.menu-links a {
+    font-size: 30px;
+    font-family: var(--dosis-font);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    color: white;
+}
+
+.menu-socials-mobile a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-socials-mobile object {
+    pointer-events: none;
+}
+
 /* HERO STYLING */
 .hero {
     height: 100vh;
     background-color: #13243c;
     overflow: hidden; /* Avoid hero img height from being larger than 100vh */
-    /* background-color: tomato; */
 }
 
 .hero img {
@@ -148,7 +228,7 @@ p {
 
 .arrow {
     position: absolute;
-    z-index: 500;
+    z-index: 10;
 }
 
 .arrow-animated {
@@ -205,6 +285,7 @@ p {
 
 /* DESKTOP */
 @media (min-width: 1350px) {
+    
     .hero img {
         height: 100vh;
     }
@@ -227,6 +308,60 @@ p {
 
     .hero-bottom div {
         margin-bottom: -8px;
+    }
+
+    .burger:hover > .line-1 {
+        transform: translateY(-3px);
+    }
+    
+    .burger:hover > .line-3 {
+        transform: translateY(3px);
+    }
+
+    .overlay {
+        height: 37px;
+        background-color: transparent;
+        justify-content: center;
+        align-items: flex-end;
+        transition: 1.2s ease;
+        transition-delay: 300ms;        
+    }
+    
+    .overlay-visible {
+        transition-delay: 0s;
+        transition: 0.9s ease;
+    }
+    
+    .menu-links {
+        flex-direction: row;
+        margin-top: 0px;
+        margin-right: 150px;
+    }
+    
+    .menu-links a {
+        font-size: 16px;
+        margin: 0 20px;
+        letter-spacing: 0.2em;
+    }
+    
+    .menu-socials-mobile a {
+        display: none;
+    }
+
+    .menu-bar {
+        background-color: black;
+        height: 37px;
+        width: 100%;
+        position: fixed;
+        transform: translateY(-100%);
+        transition: 200ms;
+        transition-delay: 800ms;
+    }
+
+    .menu-bar-visible {
+        transform: translateY(0vh);
+        transition-delay: 0s;
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
     }
 }
 
