@@ -32,7 +32,8 @@ p {
 /* MENU */
 .burger {
     width: 60px;
-    height: 13px;
+    /* height: 13px; */
+    height: auto;
     position: fixed;
     right: 12px;
     top: 12px;
@@ -64,7 +65,7 @@ p {
     transform: rotate(-14deg);
 }
 
-.overlay-mobile {
+.overlay {
     height: 100vh;
     width: 100%;
     background-color: black;
@@ -82,13 +83,13 @@ p {
     transform: translateX(0vh);
 }
 
-.menu-links-mobile {
+.menu-links {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-.menu-links-mobile a {
+.menu-links a {
     font-size: 30px;
     font-family: var(--dosis-font);
     text-transform: uppercase;
@@ -109,16 +110,6 @@ p {
 .menu-socials-mobile object {
     pointer-events: none;
 }
-
-/* .overlay-desktop {
-    height: 37px;
-    background-color: black;
-
-}
-
-.menu-links-desktop {
-    
-} */
 
 /* HERO STYLING */
 .hero {
@@ -321,6 +312,7 @@ p {
         margin-bottom: -8px;
     }
 
+    /* remove this crap */
     /* .burger:hover > .line-1 {
         transform: translateY(-3px) !important;
     }
@@ -337,7 +329,7 @@ p {
         transform: translateY(3px);
     }
 
-    .overlay-mobile {
+    .overlay {
         height: 37px;
         /* width: 100%; */
         background-color: transparent;
@@ -349,21 +341,17 @@ p {
         /* align-items: center; */
         justify-content: center;
         align-items: flex-end;
-        transition: 0.9s ease;
-        transition-delay: 0.2s;
-
-        /* box-shadow: 1px 1px 1px red; */
-        
-
+        transition: 1.2s ease;
+        transition-delay: 300ms;        
         /* transform: translateX(100%); */
     }
     
     .overlay-visible {
         transition-delay: 0s;
-        /* transform: translateX(0vh); */
+        transition: 0.9s ease;
     }
     
-    .menu-links-mobile {
+    .menu-links {
         /* display: flex; */
         flex-direction: row;
         margin-top: 0px;
@@ -371,7 +359,7 @@ p {
         /* padding: 10px 10px; */
     }
     
-    .menu-links-mobile a {
+    .menu-links a {
         font-size: 16px;
         /* font-family: var(--dosis-font); */
         /* text-transform: uppercase; */
@@ -400,13 +388,14 @@ p {
         /* z-index: 10000; */
         /* opacity: 0; */
         transition: 200ms;
-        transition-delay: 500ms;
+        transition-delay: 800ms;
     }
 
-    .menu-baro-visible {
+    .menu-bar-visible {
         /* opacity: 1; */
         transform: translateY(0vh);
         transition-delay: 0s;
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
     }
 }
 
