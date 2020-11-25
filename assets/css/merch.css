@@ -1,0 +1,76 @@
+.merch h2 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin: 20px 0 0 30px;
+  font-size: 1.8em;
+  font-weight: lighter;
+}
+
+.merch .row {
+  display: flex;
+}
+
+.merch .row > div {
+  flex: 33.33%;
+}
+
+.merch img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
+
+.merch .column {
+  position: relative;
+}
+
+.merch .content {
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(18, 18, 18, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-family: var(--dosis-font);
+  transition: opacity 0.9s, visibility 1s;
+}
+
+.merch .column:hover .content {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 1400px) {
+  .merch .column {
+    position: relative;
+    height: 100%;
+    width: 100vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .merch .row {
+    flex-direction: column;
+  }
+  .merch h2 {
+    padding: 20px;
+    font-size: 1.8em;
+    top: 20px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
