@@ -1,50 +1,32 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --helvetica-font: "Helvetica", sans-serif;
-  --dosis-font: "Dosis", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--helvetica-font);
-}
-
-h1 {
+.merch h2 {
   position: absolute;
   z-index: 1;
   color: white;
-  top: 20px;
-  left: 30px;
+  margin: 20px 0 0 30px;
   font-size: 1.8em;
   font-weight: lighter;
 }
 
-.row {
+.merch .row {
   display: flex;
 }
 
-.row > div {
+.merch .row > div {
   flex: 33.33%;
 }
 
-img {
+.merch img {
   width: 100%;
   height: 100vh;
   display: block;
   object-fit: cover;
 }
 
-.column {
+.merch .column {
   position: relative;
 }
 
-.content {
+.merch .content {
   color: white;
   font-size: 1.3em;
   text-align: center;
@@ -65,13 +47,13 @@ img {
   transition: opacity 0.9s, visibility 1s;
 }
 
-.column:hover .content {
+.merch .column:hover .content {
   visibility: visible;
   opacity: 1;
 }
 
 @media (min-width: 1400px) {
-  .column {
+  .merch .column {
     position: relative;
     height: 100%;
     width: 100vh;
@@ -79,10 +61,10 @@ img {
 }
 
 @media (max-width: 750px) {
-  .row {
+  .merch .row {
     flex-direction: column;
   }
-  h1 {
+  .merch h2 {
     padding: 20px;
     font-size: 1.8em;
     top: 20px;
