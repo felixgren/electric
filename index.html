@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/color.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -159,6 +160,45 @@
           </ul>
         </div>
       </section>
+
+      <!-- Color section -->
+      <section class="color">
+        <div class="description">
+          <h1>Customize your Electric</h1>
+          <p>
+            The Electric is available in three different colors: Cloud, Storm,
+            and Eclipse.<br />
+            Pick your favorite.
+          </p>
+        </div>
+        <div class="buttons">
+          <button
+            class="silver"
+            onclick="changeColor('assets/images/sida_ljusmedbakgrund02.jpg')"
+          >
+            CLOUD
+          </button>
+          <button
+            class="grey"
+            onclick="changeColor('assets/images/sida_morkmedbakgrund02.jpg')"
+          >
+            STORM
+          </button>
+          <button
+            class="red"
+            onclick="changeColor('assets/images/sida_rodmedbakgrund01.jpg')"
+          >
+            ECLIPSE
+          </button>
+        </div>
+
+        <div class="image-shown">
+          <img
+            class="img-displayed"
+            src="assets/images/sida_ljusmedbakgrund02.jpg"
+          />
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -166,4 +206,5 @@
     </footer>
   </body>
   <script src="/assets/js/main.js"></script>
+  <script src="assets/js/color.js"></script>
 </html>
