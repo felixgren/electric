@@ -337,7 +337,7 @@ p {
   content: attr(text);
   width: max-content;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   left: 50%;
   transform: translateX(-50%);
@@ -346,6 +346,7 @@ p {
   font-size: 16px;
   border-radius: 4px;
   display: none;
+  white-space: pre-line;
 }
 
 .hotspot::after {
