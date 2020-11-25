@@ -47,6 +47,7 @@ h1 {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 img {
@@ -93,14 +94,6 @@ button:focus {
 .red {
     background-image: url("/assets/images/darkredbutton.png");
     /*background-color: rgb(174, 76, 91);*/
-}
-
-@media (min-width: 1500px) {
-    .color {
-        position: relative;
-        height: 100%;
-        width: 100vh;
-    } 
 }
 
 @media (max-width: 750px) {
