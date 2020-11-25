@@ -1,26 +1,6 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --helvetica-font:'Helvetica', sans-serif;
-    --dosis-font: 'Dosis', sans-serif;
-}
-
-h1, h2, h3, h4 {
-    font-family: var(--helvetica-font);
-    color: white;
-}
-
-p {
-    font-family: var(--dosis-font);
-    color: white;
-}
-
-body {
+/* body {
     background-color: rgb(26, 26, 26);
-}
+} */
 
 h1 {
     font-weight: lighter;
