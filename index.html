@@ -1,48 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric</title>
-    <link rel="stylesheet" href="assets/css/merch.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon" href="" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/color.css" />
+    <link rel="stylesheet" href="assets/css/merch.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <!-- Header content -->
-        <nav>
-                <!-- Navbar -->
-        </nav>
+      <!-- Header content -->
+      <nav>
+        <!-- Navbar -->
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+
+        <div class="menu-bar"></div>
+        <div class="overlay">
+          <div class="menu-links">
+            <a href="">start</a>
+            <a href="">info</a>
+            <a href="">specs</a>
+            <a href="">merch</a>
+            <a href="">sign up</a>
+          </div>
+          <div class="menu-socials-mobile">
+            <a href="https://github.com/felixgren/electric" target="_blank">
+              <object
+                data="/assets/svg/github-social.svg"
+                type="image/svg+xml"
+              ></object>
+            </a>
+            <a
+              href="https://www.netflix.com/us-en/title/81254224"
+              target="_blank"
+            >
+              <object
+                data="/assets/svg/fb-social.svg"
+                type="image/svg+xml"
+              ></object>
+            </a>
+            <a
+              href="https://www.instagram.com/yrgo_webbutvecklare/"
+              target="_blank"
+            >
+              <object
+                data="/assets/svg/ig-social.svg"
+                type="image/svg+xml"
+              ></object>
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-    <!-- Page content here -->
-        <section class="merch">
-            <div class="row">
-            <h1>Explore the Electric lifestyle</h1>
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
-                    <div class="content">
-                    <p>Add the finishing touch to any look with our Classic Wristwatch.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1536346323287-0b6aa9e7d715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
-                    <div class="content">
-                    <p>Shock your tastebuds with an exclusive bottle of Electrics own champagne.</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <img src="https://images.unsplash.com/photo-1546241183-0ed3f8a4a824?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
-                    <div class="content">
-                    <p>Travel in style with the Electric Luggage Collection. Made with real Italian leather.</p>
-                    </div>
+      <!-- Page content here -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-title">
+            <h2>YOU ARE SPECIAL.</h2>
+            <div>
+              <h1>
+                <span>
+                  <div class="line-wrapper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div> </span
+                >L<span>
+                  <div class="line-wrapper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div> </span
+                >CTRIC
+              </h1>
+              <p>1.0</p>
+            </div>
+          </div>
+
+          <div class="hero-bottom">
+            <p>1.0</p>
+            <div>
+              <object
+                class="arrow"
+                data="/assets/svg/arrow-icon.svg"
+                type="image/svg+xml"
+              ></object>
+              <object
+                class="arrow-animated"
+                data="/assets/svg/arrow-icon.svg"
+                type="image/svg+xml"
+              ></object>
+            </div>
+            <p>E.L.E.C.T.R.I.C</p>
+          </div>
+        </div>
+
+        <picture>
+          <!-- <source srcset="/assets/images/hero.png" media="(min-width: 1000px)"> Media query here -->
+          <img src="/assets/images/hero.png" alt="Car front shot" />
+        </picture>
+      </section>
+
+      <!-- Specs content here -->
+      <section class="specs">
+        <div class="specs-container">
+          <img
+            src="/assets/images/specsmall.png"
+            alt="The Electric car shown before a gray background with an open door"
+          />
+          <h1 class="spec-title">Technical Specification</h1>
+          <div class="hotspot door" text="Outstanding passanger safety."></div>
+          <div
+            class="hotspot window"
+            text="Energy efficient and
+            aerodynamic design."
+          ></div>
+          <div
+            class="hotspot motor"
+            text="The car has a P90D Electro AT 4WD engine, 
+            that generates 559 hp and develops torque."
+          ></div>
+          <div
+            class="hotspot interior"
+            text="The new Electric features a Nappa Mistral 
+            full grain leather interior."
+          ></div>
+          <div
+            class="hotspot turbo"
+            text="It takes you 500 km with only one charge 
+            and can reach up to 250 km/h speed."
+          ></div>
+        </div>
+        <div class="mobile">
+          <ul>
+            <li data-icon="⪢ ">Outstanding passanger safety</li>
+            <li data-icon="⪢ ">
+              The car has a P90D Electro AT 4WD engine, that generates 559 hp
+              and develops torque
+            </li>
+            <li data-icon="⪢ ">
+              The new Electric features a Nappa Mistral full grain leather
+              interior
+            </li>
+            <li data-icon="⪢ ">Energy efficient aerodynamic design</li>
+            <li data-icon="⪢ ">
+              It takes you 500 km with only one charge and can reach up to 250
+              km/h speed
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Color section -->
+      <section class="color">
+        <div class="description">
+          <h1>Customize your Electric</h1>
+          <p>
+            The Electric is available in three different colors: Cloud, Storm,
+            and Eclipse.<br />
+            Pick your favorite.
+          </p>
+        </div>
+        <div class="buttons">
+          <button
+            class="silver"
+            onclick="changeColor('assets/images/sida_ljusmedbakgrund02.jpg')"
+          >
+            CLOUD
+          </button>
+          <button
+            class="grey"
+            onclick="changeColor('assets/images/sida_morkmedbakgrund02.jpg')"
+          >
+            STORM
+          </button>
+          <button
+            class="red"
+            onclick="changeColor('assets/images/sida_rodmedbakgrund01.jpg')"
+          >
+            ECLIPSE
+          </button>
+        </div>
+
+        <div class="image-shown">
+          <img
+            class="img-displayed"
+            src="assets/images/sida_ljusmedbakgrund02.jpg"
+          />
+        </div>
+      </section>
+
+      <!-- Merch section -->
+      <section class="merch">
+        <div class="row">
+        <h1>Explore the Electric lifestyle</h1>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+                <div class="content">
+                <p>Add the finishing touch to any look with our Classic Wristwatch.</p>
                 </div>
             </div>
-        </section>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1536346323287-0b6aa9e7d715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+                <div class="content">
+                <p>Shock your tastebuds with an exclusive bottle of Electrics own champagne.</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1546241183-0ed3f8a4a824?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                <div class="content">
+                <p>Travel in style with the Electric Luggage Collection. Made with real Italian leather.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
+
     <footer>
-    <!-- Footer content -->
+      <!-- Footer content -->
     </footer>
-</body>
+  </body>
+  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/color.js"></script>
 </html>
