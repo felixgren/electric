@@ -161,8 +161,24 @@
   .mobile {
     display: block;
   }
-  .hotspot {
-    display: none;
+  .door::before {
+    content: "";
+  }
+
+  .motor::before {
+    content: "";
+  }
+
+  .interior::before {
+    content: "";
+  }
+
+  .turbo::before {
+    content: "";
+  }
+
+  .window::before {
+    content: "";
   }
 }
 

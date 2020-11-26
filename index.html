@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric</title>
+    <!-- own css -->
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/specs.css" />
     <link rel="stylesheet" href="/assets/css/color.css" />
     <link rel="stylesheet" href="assets/css/merch.css" />
     <link rel="stylesheet" href="assets/css/newsletter.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- Dosis font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -121,23 +124,10 @@
           <p>Get to know your new car</p>
         </div>
         <div class="specs-container">
-          <picture>
-            <source
-              media="(min-width: 800px)"
-              srcset="/assets/images/interiorw.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width: 800px)"
-              srcset="/assets/images/interiorw.png"
-              type="image/jpeg"
-            />
-            <img
-              src="/assets/images/interiorsm.png"
-              alt="Electric car in front of a gray studio setting with one door open"
-            />
-          </picture>
-
+          <img
+            src="/assets/images/interiorw.webp"
+            alt="Electric car in front of a gray studio setting with one door open"
+          />
           <div
             class="hotspot door"
             text="
@@ -292,22 +282,50 @@
       </div>
 
       <div class="social">
-        <a href=""><i class="fab fa-facebook-square"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href="https://github.com/felixgren/electric" target="_blank">
+          <object
+            data="/assets/svg/github-social.svg"
+            type="image/svg+xml"
+          ></object>
+        </a>
+        <a href="https://www.netflix.com/us-en/title/81254224" target="_blank">
+          <object
+            data="/assets/svg/fb-social.svg"
+            type="image/svg+xml"
+          ></object>
+        </a>
+        <a
+          href="https://www.instagram.com/yrgo_webbutvecklare/"
+          target="_blank"
+        >
+          <object
+            data="/assets/svg/ig-social.svg"
+            type="image/svg+xml"
+          ></object>
+        </a>
       </div>
-      <div class="desktop">
+
+      <div class="footer-items">
         <div class="footer-contact">
-          <p>+4670000000</p>
-          <p>contact@electric.com</p>
-          <p>Lindholmspiren 1</p>
+          <a href="tel:+4670000000">+4670000000</a>
+          <a href="mailto:hi@electric.com">hi@electric.com</a>
+          <p>Lindholmen 1</p>
           <p>Göteborg</p>
         </div>
-
+        <div class="copy"><p>Electric &copy; 2020 Copyright</p></div>
         <div class="footer-company">
-          <p>Peugeot Company</p>
-          <p>Peugeot Assistant+</p>
-          <div class="copy"><p>Electric &copy; 2020 Copyright</p></div>
+          <a
+            href="https://www.peugeot.se/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Peugeot Company</a
+          >
+          <a
+            href="https://www.peugeot.se/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Peugeot Assistant+</a
+          >
         </div>
       </div>
     </footer>
