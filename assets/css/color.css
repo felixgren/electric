@@ -48,15 +48,15 @@
 }
 
 .color .silver {
-  background-image: url("/assets/images/newbutton-light.jpg");
+  background-image: url("/assets/images/webp/newbutton-light.webp");
 }
 
 .color .grey {
-  background-image: url("/assets/images/newbutton-dark.jpg");
+  background-image: url("/assets/images/webp/newbutton-dark.webp");
 }
 
 .color .red {
-  background-image: url("/assets/images/newbutton-red.jpg");
+  background-image: url("/assets/images/webp/newbutton-red.webp");
 }
 
 @media (max-width: 750px) {

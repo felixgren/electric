@@ -96,23 +96,23 @@
 }
 
 .door::before {
-  content: url(/assets/images/door.png) " " attr(text);
+  content: url(/assets/images/webp/door.webp) " " attr(text);
 }
 
 .motor::before {
-  content: url(/assets/images/motorpic.png) " " attr(text);
+  content: url(/assets/images/webp/motorpic.webp) " " attr(text);
 }
 
 .interior::before {
-  content: url(/assets/images/seat.png) " " attr(text);
+  content: url(/assets/images/webp/seat.webp) " " attr(text);
 }
 
 .turbo::before {
-  content: url(/assets/images/turbo.png) " " attr(text);
+  content: url(/assets/images/webp/turbo.webp) " " attr(text);
 }
 
 .window::before {
-  content: url(/assets/images/aero.png) " " attr(text);
+  content: url(/assets/images/webp/aero.webp) " " attr(text);
 }
 
 .hotspot::before {
