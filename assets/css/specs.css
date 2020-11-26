@@ -132,12 +132,12 @@
 }
 
 .hotspot::after {
-  content: ""; /* 
-  border-color: transparent transparent #222222dd;
-  border-width: 0 8px 6px; 
-  border-style: solid;*/
+  content: "";
+  border-color: transparent transparent #cdd5e2;
+  border-width: 0 8px 6px;
+  border-style: solid;
   position: absolute;
-  top: 24px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
