@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,8 @@
     <title>Electric</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/color.css" />
-    <link rel="stylesheet" href="assets/css/merch.css" />
+    <link rel="stylesheet" href="/assets/css/merch.css" />
+    <link rel="stylesheet" href="/assets/css/mini-newsletter.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -110,6 +113,33 @@
           <!-- <source srcset="/assets/images/hero.png" media="(min-width: 1000px)"> Media query here -->
           <img src="/assets/images/hero.png" alt="Car front shot" />
         </picture>
+      </section>
+
+      <!-- Flying car content -->
+      <section class="fly-section">
+        <div class="mini-newsletter-wrapper">
+          <div class="subscribe-wrapper">
+            <button type="submit" class="mini-subscribe-btn"><span>JOIN NOW</span></button>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="mini-email"
+              class="mini-email-input"
+              oninput="controlInput()"
+              required
+            />
+          </div>
+
+          <div class="mini-newsletter-text">
+            <h2> You are special. Electric. </h2>
+            <p> Peugeot is bringing car driving to the next level. We are on the go for the future. Our aim is to become one of the world’s most innovative companies. And now we are proud to present our car for the future: Electric.</p>
+          </div>
+        </div>
+
+        <picture>
+          <img src="/assets/images/flyingcar.png" alt="Car flying shot" />
+        </picture>
+
       </section>
 
       <!-- Specs content -->
@@ -288,4 +318,5 @@
   </body>
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/color.js"></script>
+  <script src="/assets/js/mini-newsletter.js"></script>
 </html>
