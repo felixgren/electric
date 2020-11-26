@@ -1,32 +1,52 @@
-.merch h2 {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --helvetica-font: "Helvetica", sans-serif;
+  --dosis-font: "Dosis", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--helvetica-font);
+}
+
+h2 {
+  padding: 20px;
   position: absolute;
   z-index: 1;
   color: white;
-  padding: 20px 30px;
+  top: 20px;
+  left: 30px;
   font-size: 1.8em;
   font-weight: lighter;
 }
 
-.merch .row {
+.row {
   display: flex;
 }
 
-.merch .row > div {
+.row > div {
   flex: 33.33%;
 }
 
-.merch img {
+img {
   width: 100%;
   height: 100vh;
   display: block;
   object-fit: cover;
 }
 
-.merch .column {
+.column {
   position: relative;
+  background-color: black;
 }
 
-.merch .content {
+.content {
   color: white;
   font-size: 1.3em;
   text-align: center;
@@ -47,27 +67,20 @@
   transition: opacity 0.9s, visibility 1s;
 }
 
-.merch .column:hover .content {
+.column:hover .content {
   visibility: visible;
   opacity: 1;
 }
 
-@media (min-width: 1400px) {
-  .merch .column {
-    position: relative;
-    height: 100%;
-    width: 100vh;
-  }
-}
-
 @media (max-width: 750px) {
-  .merch .row {
+  .row {
     flex-direction: column;
   }
-  .merch h2 {
+  h1 {
     padding: 20px;
-    font-size: 1.6em;
-    padding: 20px 20px;
+    font-size: 1.8em;
+    top: 20px;
+    left: 0;
     position: absolute;
     text-align: center;
     width: 100%;
