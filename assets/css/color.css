@@ -58,23 +58,27 @@
   background-image: url("/assets/images/newbutton-red.jpg");
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 750px) {
   .color img {
-    width: 60%;
-    height: auto;
-    object-fit: cover;
+    height: 400px;
+    transform: scale(1.1);
+  }
+  .color .buttons {
+    bottom: 30px;
+    position: absolute;
+    display: flex;
   }
   .color button {
-    height: 100px;
-    width: 100px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .color .image-shown {
-    display: flex;
-    justify-content: center;
+    width: 60px;
+    height: 60px;
     align-items: center;
+  }
+  .color .description {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 60px;
+    text-align: center;
   }
 }
 
@@ -96,26 +100,22 @@
   }
 }
 
-@media (max-width: 750px) {
-  .color img {
-    height: 400px;
-    transform: scale(1.1);
+@media (min-width: 1025px) {
+  .color .image-shown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .color .buttons {
-    flex-direction: row;
-    bottom: 30px;
-    position: absolute;
-    align-self: center;
+}
+
+@media (min-width: 1600px) {
+  .color img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
   }
   .color button {
-    width: 60px;
-    height: 60px;
-  }
-  .color .description {
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 60px;
-    text-align: center;
+    height: 100px;
+    width: 100px;
   }
 }
