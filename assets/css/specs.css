@@ -1,0 +1,201 @@
+.specs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(13, 13, 13);
+  position: relative;
+}
+
+.spec-desc {
+  top: 30px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 20px;
+  z-index: 1;
+}
+
+.mobile {
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+.mobile ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile li {
+  list-style: none;
+  font-size: 1.2em;
+  padding: 10px;
+  font-family: "Dosis";
+  font-weight: 300;
+  text-align: left;
+}
+
+.mobile ul li::before {
+  content: attr(data-icon);
+  font-size: 1.25em;
+}
+
+.specs-container {
+  width: 100%;
+  position: relative;
+}
+
+.specs-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.spec-title {
+  font-weight: lighter;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.hotspot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  animation: pulse 1.5s infinite;
+  cursor: pointer;
+}
+
+.door {
+  left: 57%;
+  bottom: 65%;
+}
+
+.motor {
+  left: 25%;
+  bottom: 32%;
+}
+
+.interior {
+  left: 52%;
+  bottom: 40%;
+}
+
+.turbo {
+  left: 65%;
+  bottom: 38%;
+}
+
+.window {
+  left: 34%;
+  bottom: 45%;
+}
+
+.door::before {
+  content: url(/assets/images/door.png) " " attr(text);
+}
+
+.motor::before {
+  content: url(/assets/images/motorpic.png) " " attr(text);
+}
+
+.interior::before {
+  content: url(/assets/images/seat.png) " " attr(text);
+}
+
+.turbo::before {
+  content: url(/assets/images/turbo.png) " " attr(text);
+}
+
+.window::before {
+  content: url(/assets/images/aero.png) " " attr(text);
+}
+
+.hotspot::before {
+  width: max-content;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Dosis";
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  padding: 8px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  display: none;
+  white-space: pre-line;
+}
+
+.hotspot::after {
+  content: "";
+  border-color: transparent transparent #cdd5e2;
+  border-width: 0 8px 6px;
+  border-style: solid;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.hotspot:hover::before,
+.hotspot:hover::after {
+  display: block;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 #cdd5e2;
+  }
+  to {
+    box-shadow: 0 0 0 5px #162133;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .spec-desc {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .spec-desc {
+    left: 20px;
+    text-align: left;
+  }
+  .hotspot {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  .door::before,
+  .window::before,
+  .motor::before,
+  .interior::before,
+  .turbo::before {
+    content: attr(text);
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .mobile {
+    display: block;
+  }
+
+  .mobile li {
+    font-size: 1.5em;
+  }
+}

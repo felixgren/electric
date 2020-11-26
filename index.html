@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric</title>
+    <!-- own css -->
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/specs.css" />
     <link rel="stylesheet" href="/assets/css/color.css" />
     <link rel="stylesheet" href="assets/css/merch.css" />
+    <link rel="stylesheet" href="assets/css/newsletter.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <!-- Dosis font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -113,32 +118,43 @@
       </section>
 
       <!-- Specs content -->
-      <section class="specs">
+      <section class="specs" id="specs">
+        <div class="spec-desc">
+          <h2 class="spec-title">Technical Specification</h2>
+          <p>Get to know your new car</p>
+        </div>
         <div class="specs-container">
           <img
-            src="/assets/images/specsmall.png"
-            alt="The Electric car shown before a gray background with an open door"
+            src="/assets/images/newmobilinterior.png"
+            alt="Electric car in front of a gray studio setting with one door open"
           />
-          <h1 class="spec-title">Technical Specification</h1>
-          <div class="hotspot door" text="Outstanding passanger safety."></div>
+          <div
+            class="hotspot door"
+            text="
+          Outstanding passanger safety."
+          ></div>
           <div
             class="hotspot window"
-            text="Energy efficient and
+            text="
+            Energy efficient and
             aerodynamic design."
           ></div>
           <div
             class="hotspot motor"
-            text="The car has a P90D Electro AT 4WD engine, 
+            text="
+            The car has a P90D Electro AT 4WD engine, 
             that generates 559 hp and develops torque."
           ></div>
           <div
             class="hotspot interior"
-            text="The new Electric features a Nappa Mistral 
-            full grain leather interior."
+            text="
+            The new Electric features a 
+            Nappa Mistral full grain leather interior."
           ></div>
           <div
             class="hotspot turbo"
-            text="It takes you 500 km with only one charge 
+            text="
+            It takes you 500 km with only one charge 
             and can reach up to 250 km/h speed."
           ></div>
         </div>
@@ -203,7 +219,7 @@
       </section>
 
       <!-- Merch content -->
-      <section class="merch">
+      <section class="merch" id="merch">
         <div class="row">
           <h2>Explore the Electric lifestyle</h2>
           <div class="column">
@@ -242,11 +258,11 @@
       </section>
 
       <!-- Newsletter content -->
-      <section class="form-bg">
+      <section class="form-bg" id="newsletter">
         <form>
           <h2>Join our newsletter for exclusive details</h2>
           <div class="email">
-            <label for="email">Email</label
+            <label for="email" class="visuallyhidden">Email address</label
             ><input
               type="email"
               placeholder="Your email address"
@@ -267,22 +283,50 @@
       </div>
 
       <div class="social">
-        <a href=""><i class="fab fa-facebook-square"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href="https://github.com/felixgren/electric" target="_blank">
+          <object
+            data="/assets/svg/github-social.svg"
+            type="image/svg+xml"
+          ></object>
+        </a>
+        <a href="https://www.netflix.com/us-en/title/81254224" target="_blank">
+          <object
+            data="/assets/svg/fb-social.svg"
+            type="image/svg+xml"
+          ></object>
+        </a>
+        <a
+          href="https://www.instagram.com/yrgo_webbutvecklare/"
+          target="_blank"
+        >
+          <object
+            data="/assets/svg/ig-social.svg"
+            type="image/svg+xml"
+          ></object>
+        </a>
       </div>
-      <div class="desktop">
+
+      <div class="footer-items">
         <div class="footer-contact">
-          <p>+4670000000</p>
-          <p>contact@electric.com</p>
-          <p>Lindholmspiren 1</p>
+          <a href="tel:+4670000000">+4670000000</a>
+          <a href="mailto:hi@electric.com">hi@electric.com</a>
+          <p>Lindholmen 1</p>
           <p>Göteborg</p>
         </div>
-
+        <div class="copy"><p>Electric &copy; 2020 Copyright</p></div>
         <div class="footer-company">
-          <p>Peugeot Company</p>
-          <p>Peugeot Assistant+</p>
-          <div class="copy"><p>Electric &copy; 2020 Copyright</p></div>
+          <a
+            href="https://www.peugeot.se/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Peugeot Company</a
+          >
+          <a
+            href="https://www.peugeot.se/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Peugeot Assistant+</a
+          >
         </div>
       </div>
     </footer>
