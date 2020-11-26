@@ -29,7 +29,7 @@ form {
 .email {
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding-top: 25px;
 }
 
 input[type="email"] {
@@ -125,6 +125,22 @@ button[type="submit"] {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.check-terms {
+  color: #2b2b2b;
+  font-family: var(--helvetica-font);
+  font-size: 11px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.check-terms a {
+  color: white;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 /* NEWSLETTER MEDIA */
