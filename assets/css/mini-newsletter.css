@@ -1,7 +1,4 @@
 .fly-section {
-  /* height: 100vh; */
-  background-color: cyan;
-  /* background-color: #1c2940; */
   display: flex;
   align-items: flex-end;
 }
@@ -17,40 +14,35 @@
 }
 
 .mini-newsletter-wrapper {
-    position: absolute;
-    padding: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    height: calc(360px + 50vw);
-    justify-content: space-between;
-    /* background-color: tomato; */
-    /* display: flex; */
-    /* height: 82vh; */
-    /* width: 100%; */
-    /* align-items: flex-end; */
-    /* padding: 40px; */
+  position: absolute;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  height: calc(360px + 50vw);
+  justify-content: space-between;
+  transition: 0.2s;
 }
 
-/* .subscribe-wrapper {
-    display: flex;
-    flex-direction: column;
-} */
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .mini-newsletter-wrapper button {
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    width: 180px;
-    font-weight: 200;
-    letter-spacing: 0.15em;
-    padding: 8px 14px;
-    font-size: 16px;
-    transition: 0.2s;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 140px;
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  padding: 8px;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
-/* .mini-newsletter-wrapper button:focus {
-    outline: none;
-} */
+.mini-newsletter-wrapper button:focus, .mini-newsletter-wrapper input:focus {
+  outline: none;
+}
 
 /* .mini-newsletter-wrapper button:hover {
   background-color: rgba(22, 33, 51, 0.5);
@@ -61,8 +53,24 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid white;
-  padding: 10px 0px;
-  margin-top: 10px;
+  color: white;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: var(--helvetica-font);
+  height: 8px;
+  padding: 6px 1px;
+  width: 0;
+  opacity: 0;
+  transition: 0.4s;
+  margin-top: 0px;
+}
+
+.mini-newsletter-wrapper .input-visible {
+  width: 100%;
+  margin-top: 24px;
+  opacity: 1;
+  height: 31px;
 }
 
 .mini-newsletter-wrapper input::placeholder {
@@ -76,54 +84,16 @@
 
 .mini-newsletter-text h2 {
   font-weight: 300;
-  margin-bottom: 5px;
-  letter-spacing: 0.15em;
-  display: none;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  /* display: none; */
 }
 
 .mini-newsletter-text p {
   /* display: none; */
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
 }
-
-.mini-newsletter-text {
-  font-size: 14px;
-}
-
-/* .mini-newsletter-wrapper input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    letter-spacing: 0.15em;
-    font-size: 18px;
-    font-weight: 200;
-    width: 0;
-    visibility: hidden;
-    padding: 12px 0;
-    opacity: 0;
-    transition: 0.4s;
-} */
-
-/* .mini-newsletter-wrapper .input-visible {
-    visibility: visible;
-    width: 500px;
-    padding: 16px 0;
-    margin-top: 30px;
-    opacity: 1;
-} */
-
-/* .mini-newsletter-wrapper input:focus {
-    background-color: transparent;
-    outline: none;
-} */
-
-/* .mini-newsletter-wrapper input::placeholder  {
-    background-color: transparent;
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 200;
-    letter-spacing: 0.2em;
-    opacity: 0.6;
-    
-} */
