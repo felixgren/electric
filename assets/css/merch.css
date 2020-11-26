@@ -1,18 +1,12 @@
 .merch h2 {
-  /*position: absolute;
-  z-index: 1;
-  color: white;
-  padding: 20px 30px;
-  font-size: 1.8em;
-  font-weight: lighter;*/
-  padding: 20px;
   position: absolute;
   z-index: 1;
   color: white;
-  top: 20px;
-  left: 30px;
+  padding-top: 40px;
+  padding-left: 50px;
   font-size: 1.8em;
   font-weight: lighter;
+
 }
 
 .merch .row {
@@ -67,17 +61,8 @@
     flex-direction: column;
   }
   .merch h2 {
-    /*padding: 20px;
-    font-size: 1.6em;
-    top: 20px;
-    padding: 20px 20px;
-    position: absolute;
-    text-align: center;
-    width: 100%;*/
-    padding: 20px;
+    padding: 30px;
     font-size: 1.8em;
-    top: 20px;
-    left: 0;
     position: absolute;
     text-align: center;
     width: 100%;
