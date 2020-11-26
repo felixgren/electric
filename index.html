@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/specs.css" />
     <link rel="stylesheet" href="/assets/css/color.css" />
     <link rel="stylesheet" href="assets/css/merch.css" />
+    <link rel="stylesheet" href="assets/css/newsletter.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -114,12 +116,28 @@
 
       <!-- Specs content -->
       <section class="specs">
+        <div class="spec-desc">
+          <h2 class="spec-title">Technical Specification</h2>
+          <p>Get to know your new car</p>
+        </div>
         <div class="specs-container">
-          <img
-            src="/assets/images/specsmall.png"
-            alt="The Electric car shown before a gray background with an open door"
-          />
-          <h1 class="spec-title">Technical Specification</h1>
+          <picture>
+            <source
+              media="(min-width: 800px)"
+              srcset="/assets/images/interiorw.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 800px)"
+              srcset="/assets/images/interiorw.png"
+              type="image/jpeg"
+            />
+            <img
+              src="/assets/images/interiorsm.png"
+              alt="Electric car in front of a gray studio setting with one door open"
+            />
+          </picture>
+
           <div class="hotspot door" text="Outstanding passanger safety."></div>
           <div
             class="hotspot window"
