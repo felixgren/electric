@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 1;
   color: white;
-  margin: 20px 0 0 30px;
+  padding: 20px 30px;
   font-size: 1.8em;
   font-weight: lighter;
 }
@@ -66,9 +66,8 @@
   }
   .merch h2 {
     padding: 20px;
-    font-size: 1.8em;
-    top: 20px;
-    left: 0;
+    font-size: 1.6em;
+    padding: 20px 20px;
     position: absolute;
     text-align: center;
     width: 100%;
