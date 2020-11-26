@@ -359,6 +359,7 @@ p {
     transform: translateY(-100%);
     transition: 200ms;
     transition-delay: 800ms;
+    z-index: 100;
   }
 
   .menu-bar-visible {
