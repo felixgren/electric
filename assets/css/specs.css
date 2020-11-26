@@ -61,8 +61,8 @@
 }
 
 .hotspot {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   position: absolute;
@@ -156,29 +156,13 @@
     box-shadow: 0 0 0 5px #162133;
   }
 }
-
-@media only screen and (max-width: 800px) {
-  .mobile {
-    display: block;
-  }
-  .door::before {
-    content: "";
-  }
-
-  .motor::before {
-    content: "";
-  }
-
-  .interior::before {
-    content: "";
-  }
-
-  .turbo::before {
-    content: "";
-  }
-
-  .window::before {
-    content: "";
+@media only screen and (max-width: 400px) {
+  .spec-desc {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
   }
 }
 
@@ -187,13 +171,31 @@
     left: 20px;
     text-align: left;
   }
+  .hotspot {
+    padding: 10px;
+  }
 }
-@media only screen and (max-width: 400px) {
-  .spec-desc {
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 30px;
-    text-align: center;
+
+@media only screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  .door::before,
+  .window::before,
+  .motor::before,
+  .interior::before,
+  .turbo::before {
+    content: attr(text);
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .mobile {
+    display: block;
+  }
+
+  .mobile li {
+    font-size: 1.5em;
   }
 }
