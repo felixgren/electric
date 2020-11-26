@@ -5,18 +5,17 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background-color: #202023;
+  background-color: rgb(13, 13, 13);
   position: relative;
 }
 
 .spec-desc {
   top: 30px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   position: absolute;
   padding: 20px;
-  text-align: center;
-  margin-bottom: 5px;
   z-index: 1;
 }
 
@@ -52,6 +51,7 @@
 
 .specs-container img {
   width: 100%;
+  height: 100%;
 }
 
 .spec-title {
@@ -72,27 +72,27 @@
 
 .door {
   left: 57%;
-  bottom: 55%;
+  bottom: 65%;
 }
 
 .motor {
-  left: 38%;
-  bottom: 28%;
+  left: 25%;
+  bottom: 32%;
 }
 
 .interior {
-  left: 53%;
-  bottom: 30%;
+  left: 52%;
+  bottom: 40%;
 }
 
 .turbo {
   left: 65%;
-  bottom: 31%;
+  bottom: 38%;
 }
 
 .window {
-  left: 45%;
-  bottom: 37%;
+  left: 34%;
+  bottom: 45%;
 }
 
 .door::before {
@@ -157,7 +157,7 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 800px) {
   .mobile {
     display: block;
   }
@@ -186,5 +186,14 @@
   .spec-desc {
     left: 20px;
     text-align: left;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .spec-desc {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
   }
 }
