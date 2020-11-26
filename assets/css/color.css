@@ -31,17 +31,9 @@
   object-fit: cover;
 }
 
-.color .buttons {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  margin-top: 50px;
-}
-
 .color button {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   border: 1px;
   margin: 20px;
@@ -86,6 +78,24 @@
   }
 }
 
+@media (min-width: 751px) {
+  .color .image-shown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .color .buttons {
+    flex-direction: row;
+    bottom: 30px;
+    position: absolute;
+    align-self: center;
+  }
+  .color img {
+    height: 400px;
+    transform: scale(1.4);
+  }
+}
+
 @media (max-width: 750px) {
   .color img {
     height: 400px;
@@ -96,6 +106,10 @@
     bottom: 30px;
     position: absolute;
     align-self: center;
+  }
+  .color button {
+    width: 60px;
+    height: 60px;
   }
   .color .description {
     width: 100%;
