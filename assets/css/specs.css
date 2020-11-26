@@ -16,6 +16,8 @@
   position: absolute;
   padding: 20px;
   text-align: center;
+  margin-bottom: 5px;
+  z-index: 1;
 }
 
 .mobile {
@@ -59,8 +61,8 @@
 }
 
 .hotspot {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   position: absolute;
@@ -69,60 +71,71 @@
 }
 
 .door {
-  left: 55%;
-  bottom: 53%;
+  left: 57%;
+  bottom: 55%;
 }
 
 .motor {
   left: 38%;
-  bottom: 25%;
+  bottom: 28%;
 }
 
 .interior {
   left: 53%;
-  bottom: 35%;
+  bottom: 30%;
 }
 
 .turbo {
-  left: 62%;
-  bottom: 32%;
+  left: 65%;
+  bottom: 31%;
 }
 
 .window {
-  left: 44%;
-  bottom: 36%;
+  left: 45%;
+  bottom: 37%;
 }
 
-@keyframes pulse {
-  from {
-    box-shadow: 0 0 0 0 #cdd5e2;
-  }
-  to {
-    box-shadow: 0 0 0 5px #162133;
-  }
+.door::before {
+  content: url(/assets/images/door.png) " " attr(text);
+}
+
+.motor::before {
+  content: url(/assets/images/motorpic.png) " " attr(text);
+}
+
+.interior::before {
+  content: url(/assets/images/seat.png) " " attr(text);
+}
+
+.turbo::before {
+  content: url(/assets/images/turbo.png) " " attr(text);
+}
+
+.window::before {
+  content: url(/assets/images/aero.png) " " attr(text);
 }
 
 .hotspot::before {
-  content: attr(text);
   width: max-content;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  font-family: "Dosis";
   left: 50%;
   transform: translateX(-50%);
   top: 20px;
   padding: 8px 20px;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 4px;
   display: none;
   white-space: pre-line;
 }
 
 .hotspot::after {
-  content: "";
+  content: ""; /* 
   border-color: transparent transparent #222222dd;
-  border-width: 0 8px 6px;
-  border-style: solid;
+  border-width: 0 8px 6px; 
+  border-style: solid;*/
   position: absolute;
   top: 24px;
   left: 50%;
@@ -135,7 +148,16 @@
   display: block;
 }
 
-@media only screen and (max-width: 800px) {
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 #cdd5e2;
+  }
+  to {
+    box-shadow: 0 0 0 5px #162133;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
   .mobile {
     display: block;
   }
@@ -146,7 +168,6 @@
 
 @media only screen and (min-width: 800px) {
   .spec-desc {
-    z-index: 1;
     left: 20px;
     text-align: left;
   }
