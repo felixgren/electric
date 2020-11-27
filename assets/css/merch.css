@@ -6,7 +6,6 @@
   padding-left: 50px;
   font-size: 1.8em;
   font-weight: lighter;
-
 }
 
 .merch .row {
@@ -26,7 +25,13 @@
 
 .merch .column {
   position: relative;
-  background-color: rgb(36, 36, 36);
+  background: rgb(45, 46, 46);
+  background: linear-gradient(
+    0deg,
+    rgb(14, 14, 14) 20%,
+    rgb(31, 30, 30) 40%,
+    rgb(16, 15, 15) 100%
+  );
 }
 
 .merch .content {
@@ -54,7 +59,6 @@
   visibility: visible;
   opacity: 1;
 }
-
 
 @media (max-width: 750px) {
   .merch .row {
