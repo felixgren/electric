@@ -1,16 +1,25 @@
 'use strict'
+let rightImage = document.querySelector('.right-image');
+let leftImage = document.querySelector('.left-image');
+
+const rightSrc = rightImage.src;
+const leftSrc = leftImage.src;
+
+if (window.innerWidth < 1350) {
+    rightImage.src = leftSrc;
+    leftImage.src = rightSrc;
+}
 
 const changeImage = () => {
-    let rightImage = document.querySelector('.right-image');
-    let leftImage = document.querySelector('.left-image');
-    
-    if (window.innerWidth < 648) {
-        const rightSrc = rightImage.src;
-        const leftSrc = leftImage.src;
-
-        rightImage.src = leftSrc;
-        leftImage.src = rightSrc;
-    }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 1350) {
+            rightImage.src = leftSrc;
+            leftImage.src = rightSrc;
+        } else {
+            leftImage.src = leftSrc;
+            rightImage.src = rightSrc;
+        }
+    })
 }
 
 changeImage();
