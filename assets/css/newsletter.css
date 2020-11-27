@@ -20,7 +20,7 @@
 .form-bg form {
   display: flex;
   flex-direction: column;
-  padding: 30px 14px 20px;
+  padding: 40px 14px 20px;
 }
 
 /* NEWSLETTER INPUT EMAIL */

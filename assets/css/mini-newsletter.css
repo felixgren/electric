@@ -88,9 +88,8 @@
 
 .mini-newsletter-text h2 {
   font-weight: lighter;
-  font-size: 1.95em;
-  margin-bottom: 10px;
-  text-align: center;
+  font-size: 20px;
+  margin-bottom: 6px;
 }
 
 .mini-newsletter-text p {
@@ -215,7 +214,7 @@
   }
 
   .mini-newsletter-text p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     visibility: visible;
     max-width: 670px;

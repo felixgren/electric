@@ -13,6 +13,10 @@
   flex-direction: column;
 }
 
+.color .description p {
+  font-weight: 200;
+}
+
 .color {
   background: rgb(45, 46, 46);
   background: linear-gradient(
@@ -85,7 +89,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 60px;
+    padding: 60px 30px;
     text-align: center;
   }
 }
@@ -106,6 +110,11 @@
   .color img {
     height: 400px;
     transform: scale(1.4);
+  }
+
+  .color .description p {
+    font-weight: 200;
+    font-size: 20px;
   }
 }
 

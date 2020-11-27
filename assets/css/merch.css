@@ -39,6 +39,8 @@
 .merch .content {
   color: white;
   font-size: 1.3em;
+  font-weight: 200;
+  letter-spacing: 0.015em;
   text-align: center;
   display: flex;
   justify-content: center;
