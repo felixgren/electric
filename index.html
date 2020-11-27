@@ -18,7 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
@@ -127,15 +131,18 @@
             <button type="submit" class="mini-subscribe-btn">
               <span>JOIN NOW</span>
             </button>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              oninvalid="this.setCustomValidity(' ')"
-              oninput="this.setCustomValidity('')"
-              name="mini-email"
-              class="mini-email-input"
-              required
-            />
+            <label for="mini-email">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                oninvalid="this.setCustomValidity(' ')"
+                oninput="this.setCustomValidity('')"
+                id="mini-email"
+                name="mini-email"
+                class="mini-email-input"
+                required
+              />
+            </label>
           </form>
 
           <div class="mini-newsletter-text">
@@ -187,7 +194,7 @@
       <section id="specs" class="specs">
         <div class="spec-desc">
           <h2 class="spec-title">Technical Specification</h2>
-          <p>Get to know your new car</p>
+          <p>Get to know your new car.</p>
         </div>
         <div class="specs-container">
           <img
@@ -331,13 +338,15 @@
         <form>
           <h2>Join our newsletter for exclusive details</h2>
           <div class="email">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              name="email"
-              id="email"
-              required
-            />
+            <label for="email">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
             <button type="submit" class="btn"><span>JOIN</span></button>
           </div>
           <div class="check-terms">

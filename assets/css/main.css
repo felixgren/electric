@@ -37,6 +37,10 @@ p {
   color: white;
 }
 
+label {
+  width: 100%;
+}
+
 /* MENU */
 .burger {
   width: 60px;
@@ -106,7 +110,7 @@ p {
   text-align: center;
   margin: 10px 0;
   letter-spacing: 0.1em;
-  font-weight: 300;
+  font-weight: 200;
   color: white;
 }
 

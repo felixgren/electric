@@ -182,7 +182,7 @@
   }
 
   .mini-newsletter-wrapper button {
-    width: 170px;
+    width: 190px;
     font-size: 24px;
     margin-right: 30px;
   }
@@ -209,13 +209,13 @@
   }
 
   .mini-newsletter-text h2 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     text-align: left;
   }
 
   .mini-newsletter-text p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
     visibility: visible;
     max-width: 670px;
     -webkit-box-orient: unset;
@@ -230,5 +230,9 @@
 @media (min-width: 1000px) {
   .fly-section img {
     object-position: center;
+  }
+
+  .mini-newsletter-text h2 {
+    font-size: 1.8rem;
   }
 }

@@ -28,7 +28,7 @@
 }
 
 .info-text h2 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 300;
   margin-bottom: 12px;
   margin-top: 70px;
@@ -103,7 +103,7 @@
 
   .info-text h2 {
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-bottom: 14px;
     letter-spacing: 0.05em;
   }
