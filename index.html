@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -123,21 +121,30 @@
       <!-- Flying car content -->
       <section class="fly-section">
         <div class="mini-newsletter-wrapper">
-          <div class="subscribe-wrapper">
-            <button type="submit" class="mini-subscribe-btn"><span>JOIN NOW</span></button>
+          <form class="subscribe-wrapper">
+            <button type="submit" class="mini-subscribe-btn">
+              <span>JOIN NOW</span>
+            </button>
             <input
               type="email"
               placeholder="Enter your email"
+              oninvalid="this.setCustomValidity(' ')"
+              oninput="this.setCustomValidity('')"
               name="mini-email"
               class="mini-email-input"
-              oninput="controlInput()"
               required
             />
-          </div>
+          </form>
 
           <div class="mini-newsletter-text">
-            <h2> You are special. Electric. </h2>
-            <p> Peugeot is bringing car driving to the next level. We are on the go for the future. Our aim is to become one of the world’s most innovative companies. And now we are proud to present our car for the future: Electric.</p>
+            <h2>You are special. Electric.</h2>
+            <p class="mini-newsletter-info">
+              Peugeot is bringing car driving to the next level. We are on the
+              go for the future. Our aim is to become one of the world’s most
+              innovative companies. And now we are proud to present our car for
+              the future: Electric.
+            </p>
+            <p class="read-more-btn">Read more</p>
           </div>
         </div>
 
@@ -253,7 +260,8 @@
           <h2>Explore the Electric lifestyle</h2>
           <div class="column">
             <img
-              src="assets/images/tookKLocka.png" alt="Silver wristwatch with black leather strap"
+              src="assets/images/tookKLocka.png"
+              alt="Silver wristwatch with black leather strap"
             />
             <div class="content">
               <p>
@@ -262,9 +270,7 @@
             </div>
           </div>
           <div class="column">
-            <img
-              src="assets/images/Champ.png" alt="Black champagne bottle"
-            />
+            <img src="assets/images/Champ.png" alt="Black champagne bottle" />
             <div class="content">
               <p>
                 Shock your tastebuds with an exclusive bottle of Electrics own
@@ -274,7 +280,8 @@
           </div>
           <div class="column">
             <img
-              src="assets/images/bag.png" alt="Black leather handbag sitting on a red, velvety stand"
+              src="assets/images/bag.png"
+              alt="Black leather handbag sitting on a red, velvety stand"
             />
             <div class="content">
               <p>
