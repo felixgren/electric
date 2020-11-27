@@ -12,6 +12,10 @@
   vertical-align: middle;
 }
 
+.fly-section picture {
+  width: 100%;
+}
+
 .mini-newsletter-wrapper {
   position: absolute;
   padding: 30px 10px 20px;
@@ -101,7 +105,7 @@
 }
 
 .mini-newsletter-text .p-visible {
-  max-height: 90px;
+  max-height: 100px;
 }
 
 .mini-newsletter-text p:last-child {
