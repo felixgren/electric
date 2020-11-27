@@ -7,6 +7,25 @@ const line1 = document.querySelector('.line-1');
 const line2 = document.querySelector('.line-2');
 const line3 = document.querySelector('.line-3');
 
+const menuLinks = document.querySelectorAll('.menu-links a');
+
+menuLinks.forEach((menuLink) => {
+    if(window.innerWidth <= 1350) {
+        menuLink.addEventListener('click', () => {
+            overlayMobile.classList.toggle('overlay-visible');
+            menuBar.classList.toggle('menu-bar-visible');
+            burger.classList.toggle('animate-burger');
+        
+            line2.style.opacity = '0';
+            line1.style.transform = 'translateY(-3px)';
+            line3.style.transform = 'translateY(3px)';
+            burger.style.pointerEvents = 'none';
+
+            burgerAnimationOut(300);
+        })
+    }
+})
+
 const burgerAnimationIn = (delay) => {
     setTimeout(() => {
         line1.style.transform = 'rotate(14deg)';
