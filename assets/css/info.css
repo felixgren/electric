@@ -15,15 +15,11 @@
   margin-bottom: 150px;
 }
 
-.info-right {
-}
-
 .right-image {
   width: 100%;
   object-fit: cover;
   object-position: top;
   max-height: 70vw;
-  /* height: 250px; */
 }
 
 .info-text {
@@ -51,57 +47,16 @@
 }
 
 /* INFO TABLET */
-@media (min-width: 648px) {
-  .info-section {
-    /* background-color: tomato; */
-    /* display: flex; */
-    /* flex-direction: column; */
-  }
-
-  .info-left {
-    /* order: 1; */
-  }
-
-  .left-image {
-    /* width: 100%; */
-    /* object-fit: cover; */
-    /* object-position: top; */
-    /* margin-bottom: 150px; */
-  }
-
-  .info-right {
-  }
-
-  .right-image {
-    /* width: 100%; */
-    /* object-fit: cover; */
-    /* object-position: top; */
-    /* max-height: 70vw; */
-    /* height: 250px; */
-  }
-
-  .info-text {
-    /* color: white; */
-    /* margin: 50px 20px; */
-  }
-
-  .info-text:last-child {
-    /* margin: 10px 20px; */
-  }
-
+@media (min-width: 648px) {  
   .info-text h2 {
     font-size: 36px;
-    /* font-weight: 300; */
     margin-bottom: 45px;
-    /* letter-spacing: 0.15em; */
     margin-top: 100px;
   }
 
   .info-text p {
     font-size: 22px;
-    /* font-weight: 200; */
     width: 350px;
-    /* letter-spacing: 0.05em; */
   }
 }
 
@@ -120,25 +75,13 @@
     align-items: flex-end;
     position: sticky;
     top: 0;
+    order: 0
   }
 
   .left-image {
-    width: 100%;
     max-width: 1000px;
-    object-fit: cover;
     height: 900px;
-    object-position: top;
-
-    /* object-fit: cover; */
-    /* object-position: center; */
-    /* margin-top: 400px; */
-    /* position: sticky; */
-    /* top: 500px; */
-    /* object-fit: cover; */
-    /* object-position: top; */
-  }
-
-  .info-right {
+    margin-bottom: 0px;
   }
 
   .right-image {
@@ -149,22 +92,27 @@
   }
 
   .info-text {
-    margin: 500px 0;
-    /* margin: 50vh 0 20vh; */
-    /* margin-top: calc(50vh - 50px); */
+    margin: 0 0;
     color: white;
-    width: 900px;
+    width: 100%;
+    max-width: 800px;
+    margin: 400px 0 200px;
+  }
+
+  .info-text:last-child {
+      margin: 700px 0;
   }
 
   .info-text h2 {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 300;
     margin-bottom: 25px;
     letter-spacing: 0.05em;
   }
 
   .info-text p {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 200;
+    width: 100%;
   }
 }
