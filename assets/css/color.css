@@ -1,7 +1,7 @@
 .color h2 {
   font-weight: lighter;
   margin-bottom: 10px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .color .description {
@@ -13,10 +13,14 @@
   flex-direction: column;
 }
 
+.color .description p {
+  font-weight: 200;
+}
+
 .color {
   background: rgb(45, 46, 46);
   background: linear-gradient(
-    0deg,
+    0.1deg,
     rgb(23, 23, 23) 20%,
     rgb(31, 30, 30) 40%,
     rgb(16, 15, 15) 100%
@@ -85,7 +89,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 60px;
+    padding: 60px 30px;
     text-align: center;
   }
 }
@@ -101,10 +105,16 @@
     bottom: 30px;
     position: absolute;
     align-self: center;
+    z-index: 5;
   }
   .color img {
     height: 400px;
     transform: scale(1.4);
+  }
+
+  .color .description p {
+    font-weight: 200;
+    font-size: 20px;
   }
 }
 

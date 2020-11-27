@@ -12,11 +12,16 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --helvetica-font: "Helvetica", sans-serif;
   --dosis-font: "Dosis", sans-serif;
+}
+
+main {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -30,6 +35,10 @@ h4 {
 p {
   font-family: var(--dosis-font);
   color: white;
+}
+
+label {
+  width: 100%;
 }
 
 /* MENU */
@@ -101,7 +110,7 @@ p {
   text-align: center;
   margin: 10px 0;
   letter-spacing: 0.1em;
-  font-weight: 300;
+  font-weight: 200;
   color: white;
 }
 
@@ -191,7 +200,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 15px 10px;
+  margin: 14px;
 }
 
 .hero-bottom p {

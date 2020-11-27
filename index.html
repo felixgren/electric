@@ -18,7 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
@@ -34,11 +38,12 @@
         <div class="menu-bar"></div>
         <div class="overlay">
           <div class="menu-links">
-            <a href="">start</a>
-            <a href="">info</a>
-            <a href="">specs</a>
-            <a href="">merch</a>
-            <a href="">sign up</a>
+            <a href="#start">start</a>
+            <a href="#info">info</a>
+            <a href="#specs">specs</a>
+            <a href="#colors">colors</a>
+            <a href="#merch">merch</a>
+            <a href="#signup">sign up</a>
           </div>
           <div class="menu-socials-mobile">
             <a href="https://github.com/felixgren/electric" target="_blank">
@@ -71,7 +76,7 @@
     </header>
     <main>
       <!-- Hero content -->
-      <section class="hero">
+      <section id="start" class="hero">
         <div class="hero-content">
           <div class="hero-title">
             <h2>YOU ARE SPECIAL.</h2>
@@ -126,15 +131,18 @@
             <button type="submit" class="mini-subscribe-btn">
               <span>JOIN NOW</span>
             </button>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              oninvalid="this.setCustomValidity(' ')"
-              oninput="this.setCustomValidity('')"
-              name="mini-email"
-              class="mini-email-input"
-              required
-            />
+            <label for="mini-email">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                oninvalid="this.setCustomValidity(' ')"
+                oninput="this.setCustomValidity('')"
+                id="mini-email"
+                name="mini-email"
+                class="mini-email-input"
+                required
+              />
+            </label>
           </form>
 
           <div class="mini-newsletter-text">
@@ -155,39 +163,38 @@
       </section>
 
       <!-- Info content -->
-      <section class="info-section">
+      <section id="info" class="info-section">
         <div class="info-left">
-          <img class="left-image" src="/assets/images/leftimage.png" alt="">
+          <img class="left-image" src="/assets/images/leftimage.png" alt="" />
         </div>
         <div class="info-right">
           <div class="info-text">
-            <h2>VISION</h2>
+            <h2>Vision</h2>
             <p>
-              FIRST Peugeot is a brand with history. The first car to carry the
+              Peugeot is a brand with history. The first car to carry the
               Peugeot name was unveiled in 1889, making Peugeot the world's
               second oldest car manufacturer and the oldest continuous car
               brand.
             </p>
           </div>
-          <img class="right-image" src="/assets/images/rightimage.png" alt="">
+          <img class="right-image" src="/assets/images/rightimage.png" alt="" />
           <div class="info-text">
-            <h2>HISTORY</h2>
+            <h2>History</h2>
             <p>
-              LAST Peugeot is a brand with history. The first car to carry the
+              Peugeot is a brand with history. The first car to carry the
               Peugeot name was unveiled in 1889, making Peugeot the world's
               second oldest car manufacturer and the oldest continuous car
               brand.
             </p>
           </div>
         </div>
-
       </section>
 
       <!-- Specs content -->
-      <section class="specs" id="specs">
+      <section id="specs" class="specs">
         <div class="spec-desc">
           <h2 class="spec-title">Technical Specification</h2>
-          <p>Get to know your new car</p>
+          <p>Get to know your new car.</p>
         </div>
         <div class="specs-container">
           <img
@@ -245,7 +252,7 @@
       </section>
 
       <!-- Color content -->
-      <section class="color">
+      <section id="colors" class="color">
         <div class="description">
           <h2>Customize your Electric</h2>
           <p>
@@ -257,19 +264,19 @@
         <div class="buttons">
           <button
             class="grey"
-            onclick="changeColor('assets/images/dark_whole.png')"
+            onclick="changeColor('assets/images/webp/dark_whole.webp')"
           >
             STORM
           </button>
           <button
             class="silver"
-            onclick="changeColor('assets/images/light_whole.png')"
+            onclick="changeColor('assets/images/webp/light_whole.webp')"
           >
             CLOUD
           </button>
           <button
             class="red"
-            onclick="changeColor('assets/images/red_whole.png')"
+            onclick="changeColor('assets/images/webp/red_whole.webp')"
           >
             ECLIPSE
           </button>
@@ -278,19 +285,19 @@
         <div class="image-shown">
           <img
             class="img-displayed"
-            src="assets/images/dark_whole.png"
+            src="assets/images/webp/dark_whole.webp"
             alt="Dark grey/light grey/ red car shown from the side"
           />
         </div>
       </section>
 
       <!-- Merch content -->
-      <section class="merch" id="merch">
+      <section id="merch" class="merch">
         <div class="row">
           <h2>Explore the Electric lifestyle</h2>
           <div class="column">
             <img
-              src="assets/images/tookKLocka.png"
+              src="assets/images/webp/tookKLocka.webp"
               alt="Silver wristwatch with black leather strap"
             />
             <div class="content">
@@ -300,7 +307,10 @@
             </div>
           </div>
           <div class="column">
-            <img src="assets/images/Champ.png" alt="Black champagne bottle" />
+            <img
+              src="assets/images/webp/Champ.webp"
+              alt="Black champagne bottle"
+            />
             <div class="content">
               <p>
                 Shock your tastebuds with an exclusive bottle of Electrics own
@@ -310,7 +320,7 @@
           </div>
           <div class="column">
             <img
-              src="assets/images/bag.png"
+              src="assets/images/webp/bag.webp"
               alt="Black leather handbag sitting on a red, velvety stand"
             />
             <div class="content">
@@ -324,22 +334,23 @@
       </section>
 
       <!-- Newsletter content -->
-      <section class="form-bg" id="newsletter">
+      <section id="signup" class="form-bg" id="newsletter">
         <form>
           <h2>Join our newsletter for exclusive details</h2>
           <div class="email">
-            <label for="email" class="visuallyhidden">Email address</label
-            ><input
-              type="email"
-              placeholder="ENTER YOUR EMAIL"
-              name="email"
-              id="email"
-              required
-            />
+            <label for="email">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
             <button type="submit" class="btn"><span>JOIN</span></button>
           </div>
           <div class="check-terms">
-            <input type="checkbox" id="check" name="check" />
+            <input type="checkbox" id="check" name="check" required />
             <label for="check"
               >Check to state you have read and agree to our
               <a href="#">Terms & Conditions</a></label
@@ -351,9 +362,21 @@
 
     <!-- Footer content -->
     <footer>
-      <div class="logo">
-        <img src="/assets/images/electric.png" alt="Electric logo" />
-      </div>
+      <h2 class="logo">
+        <span>
+          <div class="line-wrapper">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div> </span
+        >L<span>
+          <div class="line-wrapper">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div> </span
+        >CTRIC
+      </h2>
 
       <div class="social">
         <a href="https://github.com/felixgren/electric" target="_blank">

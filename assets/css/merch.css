@@ -4,7 +4,7 @@
   color: white;
   padding-top: 40px;
   padding-left: 50px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: lighter;
 }
 
@@ -21,22 +21,26 @@
   height: 100vh;
   display: block;
   object-fit: cover;
-}
 
-.merch .column {
-  position: relative;
-  background: rgb(45, 46, 46);
   background: linear-gradient(
-    0deg,
+    0.1deg,
     rgb(14, 14, 14) 20%,
     rgb(31, 30, 30) 40%,
     rgb(16, 15, 15) 100%
   );
+  transition: 0.7s;
+}
+
+.merch .column {
+  position: relative;
+  background: rgb(14, 14, 14);
 }
 
 .merch .content {
   color: white;
   font-size: 1.3em;
+  font-weight: 200;
+  letter-spacing: 0.015em;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -47,17 +51,18 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(18, 18, 18, 0.72);
-  color: #fff;
-  visibility: hidden;
+  background: transparent;
   opacity: 0;
   font-family: var(--dosis-font);
-  transition: opacity 0.9s, visibility 1s;
+  transition: 0.7s;
 }
 
 .merch .column:hover .content {
-  visibility: visible;
   opacity: 1;
+}
+
+.merch .column:hover > img {
+  opacity: 0.5;
 }
 
 @media (max-width: 750px) {
@@ -66,7 +71,7 @@
   }
   .merch h2 {
     padding: 30px;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     position: absolute;
     text-align: center;
     width: 100%;
