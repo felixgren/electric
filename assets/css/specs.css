@@ -51,7 +51,11 @@
 
 .specs-container img {
   width: 100%;
-  height: 100%;
+  height: 74vh;
+  margin-top: 14vh;
+  object-fit: cover;
+  object-position: center;
+  object-position: -60px;
 }
 
 .spec-title {
@@ -61,12 +65,13 @@
 }
 
 .hotspot {
+  display: none;
   width: 10px;
   height: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   position: absolute;
-  animation: pulse 1.5s infinite;
+  animation: pulse 2.5s infinite;
   cursor: pointer;
 }
 
@@ -120,13 +125,15 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  font-weight: 200;
+  letter-spacing: 0.05em;
   font-family: "Dosis";
   left: 50%;
   transform: translateX(-50%);
   top: 20px;
-  padding: 8px 20px;
+  padding: 20px;
   font-size: 18px;
-  border-radius: 4px;
+  border-radius: 2px;
   display: none;
   white-space: pre-line;
 }
@@ -149,11 +156,14 @@
 }
 
 @keyframes pulse {
-  from {
+  0% {
     box-shadow: 0 0 0 0 #cdd5e2;
   }
-  to {
-    box-shadow: 0 0 0 5px #162133;
+  60% {
+    box-shadow: 0 0 0 4px #162133;
+  }
+  90% {
+    box-shadow: 0 0 0 10px transparent;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -197,5 +207,19 @@
 
   .mobile li {
     font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .specs-container img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    object-fit: unset;
+    object-position: 0px;
+  }
+
+  .hotspot {
+    display: initial;
   }
 }

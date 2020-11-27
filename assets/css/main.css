@@ -12,11 +12,16 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --helvetica-font: "Helvetica", sans-serif;
   --dosis-font: "Dosis", sans-serif;
+}
+
+main {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -191,7 +196,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 15px 10px;
+  margin: 14px;
 }
 
 .hero-bottom p {

@@ -18,7 +18,7 @@
 
 .mini-newsletter-wrapper {
   position: absolute;
-  padding: 30px 10px 20px;
+  padding: 30px 14px 20px;
   display: flex;
   flex-direction: column-reverse;
   height: calc(360px + 50vw);
@@ -45,6 +45,7 @@
   padding: 8px;
   font-size: 16px;
   transition: 0.2s;
+  margin-left: 0;
 }
 
 .mini-newsletter-wrapper button:focus,
@@ -86,11 +87,10 @@
 }
 
 .mini-newsletter-text h2 {
-  font-weight: 300;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 0.1em;
+  font-weight: lighter;
+  font-size: 1.95em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .mini-newsletter-text p {
@@ -210,9 +210,8 @@
   }
 
   .mini-newsletter-text h2 {
-    font-size: 28px;
-    text-transform: none;
-    letter-spacing: 0;
+    font-size: 1.8em;
+    text-align: left;
   }
 
   .mini-newsletter-text p {

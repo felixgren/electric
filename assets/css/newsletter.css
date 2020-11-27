@@ -12,83 +12,87 @@
 .form-bg h2 {
   font-family: var(--helvetica-font);
   font-weight: 300;
-  font-size: 46px;
+  font-size: 1.8em;
   color: white;
-  margin-top: 30px;
   text-align: center;
-  padding: 20px;
 }
 
-form {
+.form-bg form {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px 14px 20px;
 }
 
 /* NEWSLETTER INPUT EMAIL */
 .email {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 40px;
 }
 
 input[type="email"] {
   width: 100%;
-  padding: 15px;
+  padding: 12px 2px;
   border: none;
   background: transparent;
-  background-color: rgba(238, 230, 230, 0.644);
-  border-bottom: solid rgb(109, 109, 109) 2px;
-  border-right: solid rgb(109, 109, 109) 2px;
-  border-left: solid rgb(109, 109, 109) 2px;
-  /* border-top: solid white 2px; */
-  color: #2b2b2b;
-  font-size: 18px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-weight: 200;
+  font-family: var(--helvetica-font);
 }
 
 .email input:focus {
-  background-color: rgba(255, 255, 255, 0.945);
+  outline: none;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #2b2b2b;
-  opacity: 1; /* Firefox */
+  color: white;
+  opacity: 0.6; /* Firefox */
   font-family: var(--helvetica-font);
-  font-size: 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #2b2b2b;
+  color: white;
+  opacity: 0.6; /* Firefox */
+  font-size: 10px;
   font-family: var(--helvetica-font);
-  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #2b2b2b;
+  color: white;
+  opacity: 0.6; /* Firefox */
+  font-size: 10px;
   font-family: var(--helvetica-font);
-  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 /* NEWSLETTER BUTTON */
 button[type="submit"] {
   font-family: var(--dosis-font);
-  font-weight: 300;
-  font-size: 28px;
+  font-weight: 200;
+  font-size: 16px;
   text-align: center;
-  color: #2b2b2b;
-  width: 30%;
-  padding: 5px;
+  color: white;
+  width: 120px;
+  padding: 8px;
   text-decoration: none;
-  border: none;
-  background: transparent;
+  border: 1px solid white;
+  background-color: transparent;
   transition: all 0.5s;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.829);
-  border-right: 2px solid rgb(109, 109, 109);
-  border-bottom: 2px solid rgb(109, 109, 109);
+  letter-spacing: 0.15em;
+  margin-left: 12px;
 }
 
 .btn span {
@@ -128,11 +132,15 @@ button[type="submit"] {
 }
 
 .check-terms {
-  color: #2b2b2b;
+  color: white;
   font-family: var(--helvetica-font);
-  font-size: 11px;
-  text-align: center;
-  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  opacity: 0.9;
+  display: flex;
+  align-items: flex-start;
 }
 
 .check-terms a {
@@ -141,6 +149,8 @@ button[type="submit"] {
 
 input[type="checkbox"] {
   margin-right: 5px;
+  width: 14px;
+  height: 14px;
 }
 
 /* NEWSLETTER MEDIA */
@@ -152,5 +162,12 @@ input[type="checkbox"] {
   }
   .form-bg h1 {
     font-size: 3em;
+  }
+  ::placeholder {
+    font-size: 14px;
+  }
+
+  .form-bg form {
+    padding: 100px 80px 20px;
   }
 }
