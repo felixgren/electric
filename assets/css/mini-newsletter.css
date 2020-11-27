@@ -1,0 +1,236 @@
+.fly-section {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fly-section img {
+  width: 100%;
+  height: calc(360px + 50vw);
+  object-fit: cover;
+  object-position: center;
+  object-position: -200px;
+  vertical-align: middle;
+}
+
+.fly-section picture {
+  width: 100%;
+}
+
+.mini-newsletter-wrapper {
+  position: absolute;
+  padding: 30px 10px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  height: calc(360px + 50vw);
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-newsletter-wrapper button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 140px;
+  font-weight: 200;
+  letter-spacing: 0.15em;
+  padding: 8px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.mini-newsletter-wrapper button:focus,
+.mini-newsletter-wrapper input:focus {
+  outline: none;
+}
+
+.mini-newsletter-wrapper input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: var(--helvetica-font);
+  height: 8px;
+  padding: 6px 1px;
+  width: 0;
+  opacity: 0;
+  transition: 0.4s;
+  margin-top: 0px;
+}
+
+.mini-newsletter-wrapper .input-visible {
+  width: 100%;
+  margin-top: 24px;
+  opacity: 1;
+  height: 31px;
+}
+
+.mini-newsletter-wrapper input::placeholder {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+}
+
+.mini-newsletter-text h2 {
+  font-weight: 300;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.mini-newsletter-text p {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 40px;
+  transition: 0.4s;
+}
+
+.mini-newsletter-text .p-visible {
+  max-height: 100px;
+}
+
+.mini-newsletter-text p:last-child {
+  margin-top: 5px;
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: underline;
+}
+
+.subscribe-wrapper {
+  transition: 0.2s;
+  padding: 0;
+}
+
+.subscribe-wrapper:valid > button {
+  animation-name: validSubmit;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes validSubmit {
+  0% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.subscribe-wrapper > button:after {
+  content: "\00bb";
+  opacity: 0;
+  top: 0;
+  margin-right: -10px;
+  transition: 0.5s;
+}
+
+.subscribe-wrapper:valid > button:after {
+  opacity: 1;
+  margin-right: 0;
+}
+
+@media (min-width: 648px) {
+  .fly-section img {
+    width: 100%;
+    height: calc(360px + 50vw);
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    object-position: -400px;
+  }
+
+  .mini-newsletter-wrapper {
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+  }
+
+  .dark-overlay {
+    background-color: transparent;
+  }
+
+  .subscribe-wrapper {
+    padding: 40px 0;
+    flex-direction: row;
+  }
+
+  .mini-newsletter-wrapper button {
+    width: 170px;
+    font-size: 24px;
+    margin-right: 30px;
+  }
+
+  .mini-newsletter-wrapper button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .mini-newsletter-wrapper input {
+    height: 49px;
+    transition: 0.5s;
+    margin-bottom: 0px;
+  }
+
+  .mini-newsletter-wrapper .input-visible {
+    width: 500px;
+    margin-top: 0;
+    height: 49px;
+  }
+
+  .mini-newsletter-wrapper input::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+  }
+
+  .mini-newsletter-text h2 {
+    font-size: 28px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .mini-newsletter-text p {
+    font-size: 18px;
+    font-weight: 300;
+    visibility: visible;
+    max-width: 670px;
+    -webkit-box-orient: unset;
+    max-height: unset;
+  }
+
+  .mini-newsletter-text p:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .fly-section img {
+    object-position: center;
+  }
+}
