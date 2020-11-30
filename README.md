@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/33127919/100674358-4ce93f00-3365-11eb-9f0c-04870b2483d1.jpg" width=100%/>
+<img src="https://user-images.githubusercontent.com/33127919/100675721-c4b86900-3367-11eb-8666-4ad94b3b83ee.jpg" width=100%/>
 
 # Electric
 <strong>LIVE: https://electric-phi.vercel.app/</strong>
