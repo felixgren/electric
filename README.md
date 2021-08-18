@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/33127919/100675721-c4b86900-3367-11eb-8666-4ad94b3b83ee.jpg" width=100%/>
 
 # Electric
-<strong>LIVE: https://electric-phi.vercel.app/</strong>
+<strong>LIVE: https://www.flightoftomorrow.com</strong>
 
 Collaborative project to design and create a landing page for a chosen product. 
 
